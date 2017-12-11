@@ -7,11 +7,16 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
 <%= csrf_meta_tags %>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
     <title>Business</title>
 </head>
 <body class="red">
@@ -48,14 +53,11 @@
         <div class="swiper-container busines-slider"  data-loop="1" data-slides-per-view="1" data-mode="horizontal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                      <%= image_tag('top_bg.jpg', :class => 'center-image', :alt => 'background') %>
+                      <%= image_tag('dariusz.jpg', :class => 'center-image', :alt => 'background') %>
                     <div class="container">
                         <div class="content-red">
                             <h1>analysis,<br> <span>strategy,</span><br> development</h1>
-
-                            <p>Nulla facilisi. Mauris bibendum eros sapien, ut fringilla lectus lobortis placerat. Sed
-                                eu urna consectetur, maximus elit dapibus, pellentesque mauris. Suspendisse potenti.
-                                Proin egestas tortor vel nisi placerat mattis. Aliquam erat volutpat.</p>
+                              <p>As a team of electronic evidence advisors with ample amount of experience, we remove the burden for our clients by leveraging industry-leading expertise and technology to provide defensible access to electronic data and deliver cost-effective, brand focused results.</p>
                         </div>
                     </div>
                 </div>
@@ -65,9 +67,7 @@
                         <div class="content-red">
                             <h2>experience,<br> <span>developing,</span><br> creative</h2>
 
-                            <p>Nulla facilisi. Mauris bibendum eros sapien, ut fringilla lectus lobortis placerat. Sed
-                                eu urna consectetur, maximus elit dapibus, pellentesque mauris. Suspendisse potenti.
-                                Proin egestas tortor vel nisi placerat mattis. Aliquam erat volutpat.</p>
+                            <p>We strive to make an impact on the businesses we working with and their communities. We serve by incorporating insightful master-planning development, innovation and creativity, and focusing on long-term sustainability.</p>
                         </div>
                     </div>
                 </div>
@@ -75,22 +75,18 @@
                     <%= image_tag('slide_bg3.jpg', :class => 'center-image', :alt => 'background') %>
                     <div class="content-red">
                         <div class="container">
-                            <h2>design,<br> <span> discuss,</span><br> production</h2>
-                            <p>Nulla facilisi. Mauris bibendum eros sapien, ut fringilla lectus lobortis placerat. Sed
-                                eu urna consectetur, maximus elit dapibus, pellentesque mauris. Suspendisse potenti.
-                                Proin egestas tortor vel nisi placerat mattis. Aliquam erat volutpat.</p>
+                            <h2>curate,<br> <span> analyse,</span><br> production</h2>
+                            <p>The experienced and talented team of web development experts at BxMark take the next step in your company’s evolution with a website that takes advantage of current programming trends. No client is exactly like another, and we approach each project as a unique venture that presents exciting challenges.</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                  <%= image_tag('top_bg.jpg', :class => 'center-image', :alt => 'background') %>
+                  <%= image_tag('neven.jpg', :class => 'center-image', :alt => 'background') %>
                     <div class="container">
                         <div class="content-red">
-                            <h2>marketing,<br> <span>support,</span><br>  concept</h2>
+                            <h2>concept,<br> <span>branding,</span><br>  support</h2>
 
-                            <p>Nulla facilisi. Mauris bibendum eros sapien, ut fringilla lectus lobortis placerat. Sed
-                                eu urna consectetur, maximus elit dapibus, pellentesque mauris. Suspendisse potenti.
-                                Proin egestas tortor vel nisi placerat mattis. Aliquam erat volutpat.</p>
+                            <p> Our designers have deep experience in branding, corporate identity, brochures, annual reports, promotions, exhibitions, advertising, website design, apps, user experience design, publications, and motion graphics.</p>
                         </div>
                     </div>
                 </div>
@@ -102,25 +98,25 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation active-nav">
-                          <i class="fa fa-users" aria-hidden="true"></i>
+                          <i class="fa fa-users fa-4x" aria-hidden="true"></i>
                             <h5>about us</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                          <%= image_tag('icon_2.png', :alt => 'banner navigation') %>
+                          <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
                             <h5>philosophy</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                          <%= image_tag('icon_3.png', :alt => 'banner navigation') %>
+                          <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
                             <h5>principles</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                          <%= image_tag('icon_4.png', :alt => 'banner navigation') %>
+                          <i class="fa fa-flag-o fa-4x" aria-hidden="true"></i>
                             <h5>experience</h5>
                         </div>
                     </div>
@@ -129,150 +125,38 @@
         </div>
     </div>
     <!--BLOCK "TYPE 2"-->
-    <div class="serv scroll-to-block" >
+    <div id="servsec" class="serv scroll-to-block" >
         <div class="container">
             <h2 class="block-title b-block-title">
                 our services
             </h2>
 
             <p class="sub-title">
-                Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus quis sem tincidunt
-                egestas vel id lacus.
+            By learning, creating, curating we strive for our expectations in a market that is constantly shifting and changing shape.
             </p>
 
             <div class="row">
-                <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><%= image_tag('serv_1.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><%= image_tag('business.png', :alt => 'service') %></p>
                     <h5>analysis</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('serv_2.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('microphone.png', :alt => 'service') %></p>
                     <h5>strategy</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('serv_3.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('socialmed.png', :alt => 'service') %></p>
                     <h5>social media</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('serv_4.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('television.png', :alt => 'service') %></p>
                     <h5>marketing</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('serv_5.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('development.png', :alt => 'service') %></p>
                     <h5>development</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('serv_5.png', :alt => 'service') %></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('support.png', :alt => 'service') %></p>
                     <h5>support</h5>
                 </div>
             </div>
         </div>
-        <div class="detail current-det">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>Analysis</h4>
 
-                            <p>Vestibulum vitae tellus nec dui dictum tempor. Nulla elit ex, viverra a eros ac, placerat
-                                vehicula dui. Nunc imperdiet luctus interdum. Duis non condimentum nunc.Proin placerat
-                                pharetra aliquam. Aliquam sit amet interdum nulla pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div id="servy" class="serv-pic">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>strategy</h4>
-
-                            <p>Vestibulum vitae tellus nec dui dictum tempor. Nulla elit ex, viverra a eros ac, placerat
-                                vehicula dui. Nulla elit ex, viverra a eros ac, placerat vehicula dui. Nunc imperdiet
-                                luctus interdum. Duis non condimentum nunc.Proin placerat pharetra aliquam. Aliquam sit
-                                amet interdum nulla pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="serv-pic" style="background-image:url('serv_2bg.jpg')">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>Social media</h4>
-
-                            <p>Vestibulum vitae tellus nec dui dictum tempor. Nulla elit ex, viverra a eros ac, placerat
-                                vehicula dui. Nunc imperdiet luctus interdum. Aliquam sit amet interdum nulla
-                                pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="serv-pic" style="background-image:url('serv_bg.jpg')">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>marketing</h4>
-
-                            <p>Vestibulum vitae tellus nec dui dictum tempor. Nulla elit ex, viverra a eros ac, placerat
-                                vehicula dui. Nunc imperdiet luctus interdum. Duis non condimentum nunc.Proin placerat
-                                pharetra aliquam. Nunc imperdiet luctus interdum. Duis non condimentum nunc.Proin
-                                placerat pharetra aliquam.Aliquam sit amet interdum nulla pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="serv-pic" style="background-image:url('serv_2bg.jpg')">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>development</h4>
-
-                            <p>Vestibulum vitae tellus nec dui dictum tempor. Nulla elit ex, viverra a eros ac, placerat
-                                vehicula dui. Nunc imperdiet luctus interdum. Proin placerat pharetra aliquam. Aliquam
-                                sit amet interdum nulla pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="serv-pic" style="background-image:url('serv_bg.jpg')">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="detail">
-            <div class="container-fluid">
-                <div class="row orange-row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 service-detail">
-                        <div>
-                            <h4>support</h4>
-
-                            <p> Nunc imperdiet luctus interdum.Vestibulum vitae tellus nec dui dictum tempor. Nulla elit
-                                ex, viverra a eros ac, placerat vehicula dui. Nunc imperdiet luctus interdum. Duis non
-                                condimentum nunc.Proin placerat pharetra aliquam. Nunc imperdiet luctus interdum.
-                                Aliquam sit amet interdum nulla pellentesque nisl.</p>
-                            <a class="read-more" href="#">Read more</a>
-                        </div>
-                    </div>
-                    <div class="serv-pic" style="background-image:url('serv_2bg.jpg')">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--BLOCK "TYPE 3"-->
     <!--BLOCK "TYPE 4"-->
     <div class="work-process scroll-to-block" >
@@ -287,7 +171,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process active-process">
-                        <img src="proc_1.png" alt="">
+                      <%= image_tag('discussion.png', class: 'wrkred') %>
                         <h6>Discuss</h6>
 
                         <div class="number number-red"><p>1</p></div>
@@ -295,7 +179,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="proc_2.png" alt="">
+                      <%= image_tag('proc_2.png') %>
                         <h6>Creative Concept</h6>
 
                         <div class="number number-red"><p>2</p></div>
@@ -303,7 +187,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="proc_3.png" alt="">
+                      <%= image_tag('proc_3.png') %>
                         <h6>Production</h6>
 
                         <div class="number number-red"><p>3</p></div>
@@ -311,7 +195,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="proc_4.png" alt="">
+                      <%= image_tag('proc_4.png') %>
                         <h6>Happy client</h6>
 
                         <div class="number number-red"><p>4</p></div>
@@ -321,59 +205,59 @@
             <div class="row">
                 <div class="process-info active-info">
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Nulla facilisi. Vestibulum in egestas purus.</p>
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Sed tempor vulputate mi. Phasellus vel velit mauris.</p>
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Sed condimentum, libero et faucibus tempus, urna arcu condimentum orci, at finibus enim tellus sed nunc. Nullam viverra massa interdum.</p>
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Phasellus vel velit mauris. Nullam viverra massa ut euismod interdum. Sed feugiat suscipit tellus. Proin efficitur mi eget odio. </p>
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
                     </div>
                 </div>
 
                 <div class="process-info">
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Nulla facilisi. Vestibulum in egestas purus.</p>
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Sed tempor vulputate mi. Phasellus vel velit mauris.</p>
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Sed condimentum, libero et faucibus tempus, urna arcu condimentum orci, at finibus enim tellus sed nunc. Nullam viverra massa interdum.</p>
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Phasellus vel velit mauris. Nullam viverra massa ut euismod interdum. Sed feugiat suscipit tellus. Proin efficitur mi eget odio. </p>
-                    </div>
-                </div>
-                <div class="process-info">
-                    <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Nulla facilisi. Vestibulum in egestas purus.</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Sed tempor vulputate mi. Phasellus vel velit mauris.</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Sed condimentum, libero et faucibus tempus, urna arcu condimentum orci, at finibus enim tellus sed nunc. Nullam viverra massa interdum.</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Phasellus vel velit mauris. Nullam viverra massa ut euismod interdum. Sed feugiat suscipit tellus. Proin efficitur mi eget odio. </p>
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
                     </div>
                 </div>
                 <div class="process-info">
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex. Nulla facilisi. Vestibulum in egestas purus.</p>
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Etiam sit amet libero consequat, convallis odio ac, vestibulum urna. Sed tempor vulputate mi. Phasellus vel velit mauris.</p>
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Sed condimentum, libero et faucibus tempus, urna arcu condimentum orci, at finibus enim tellus sed nunc. Nullam viverra massa interdum.</p>
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-12 read">
-                        <p>Phasellus vel velit mauris. Nullam viverra massa ut euismod interdum. Sed feugiat suscipit tellus. Proin efficitur mi eget odio. </p>
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
+                    </div>
+                </div>
+                <div class="process-info">
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
                     </div>
                 </div>
             </div>
@@ -387,73 +271,69 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="price">
-                        <h3>our prices</h3>
+                        <h3>Coming Platform</h3>
 
-                        <p>Sed finibus nec orci et cursus. Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat,
-                            rhoncus nisi sed, pulvinar ex.</p>
+                        <p>BxMark was created to ultimately help small and medium sized businesses navigate the crazy world of digital marketing. </p>
 
-                        <p>Nulla facilisi. Mauris bibendum eros sapien, ut fringilla lectus lobortis placerat. Sed eu
-                            urna consectetur, maximus elit dapibus, pellentesque mauris. Suspendisse potenti.</p>
+                        <p>While we are still developing launch date is still set for early-mid january, we found the best approach was to make it easy for SMBs to find great agencies and digital marketing professionals.<br>
+                          To do this BxMark created a marketplace that provides a comprehensive directory of trusted marketing service professionals in local markets and across industry verticals.</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="year-price">
-                        <h3 class="price-number">$150.00</h3>
+                        <h3 class="price-number">TBA Dec| 28th</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="price_1.png" alt="price user">
-                        <h6 class="user">starter</h6>
+                        <%= image_tag('price_1.png', :alt => 'service') %>
+                        <h6 class="user">Newbie</h6>
                         <ul class="price-list">
-                            <li><span>No</span> proin placerat phare</li>
-                            <li><span>Yes </span> aliquam sit amet inter</li>
-                            <li><span>128Gb</span> praesent pellen</li>
-                            <li><span>Included</span> tempor vulputate mi</li>
-                            <li><span>No</span> condimentum libero</li>
+                            <li><span>Learn</span> the how to's and more</li>
+                            <li><span>Utilize</span> tools, time and money</li>
+                            <li><span>Execute</span> goals</li>
+                            <li><span>All</span> text info</li>
                         </ul>
                         <div>
-                            <a class="read-more" href="#">get it now <i class="w-arrow"></i></a>
+                          <a id="tooltip" class="read-more" href="" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Learn More<span class="tooltiptext">Suitable Ages:<br>Any <br><br>Spot left:<br> 38 out of 87 <br><br>Begin Date:<br><br> 12/10/2017<br><br>Today's Date:<%= Time.now %><br>Auto Upate: 2AM</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="year-price">
-                        <h3 class="price-number">$200.00</h3>
+                        <h3 class="price-number">TBA Jan| 5th</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="price_2.png" alt="price user">
-                        <h6 class="user">user</h6>
+                        <%= image_tag('price_2.png', :alt => 'service') %>
+                        <h6 class="user">General</h6>
 
                         <ul class="price-list">
-                            <li><span>No</span> proin placerat phare</li>
-                            <li><span>Yes </span> aliquam sit amet inter</li>
-                            <li><span>256Gb</span> praesent pellen</li>
-                            <li><span>Included</span> tempor vulputate mi</li>
-                            <li><span>No</span> condimentum libero</li>
+                            <li><span>Utilize</span>yourself, your circle</li>
+                            <li><span>Engagement</span> tools, time and money</li>
+                            <li><span>Execute</span> Projects</li>
+                            <li><span>Enviroment</span> transition from Jr. Developer</li>
                         </ul>
 
                         <div>
-                            <a class="read-more" href="#">get it now <i class="w-arrow"></i></a>
+                          <a id="tooltip" class="read-more" href="" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Learn More<span class="tooltiptext">Suitable Ages:<br>Any <br><br>Spot left:<br> 4 out of 30 <br><br>Begin Date:<br><br> 12/10/2017<br><br>Today's Date:<%= Time.now %><br>Auto Upate: 2AM</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="year-price">
-                        <h3 class="price-number">$300.00</h3>
+                        <h3 class="price-number">TBA Jan| 20th</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="price_3.png" alt="price user">
+                        <%= image_tag('price_3.png', :alt => 'service') %>
                         <h6 class="user">advanced</h6>
 
                         <ul class="price-list">
-                            <li><span>No</span> proin placerat phare</li>
-                            <li><span>Yes </span> aliquam sit amet inter</li>
-                            <li><span>512Gb</span> praesent pellen</li>
-                            <li><span>Included</span> tempor vulputate mi</li>
-                            <li><span>No</span> condimentum libero</li>
+                            <li><span>Learn</span> about BME</li>
+                            <li><span>Business</span> principals to law</li>
+                            <li><span>Marketing</span> goals</li>
+                            <li><span>Engineering</span> the being and doing</li>
                         </ul>
 
                         <div>
-                            <a class="read-more" href="#">get it now <i class="w-arrow"></i></a>
+                          <a id="tooltip" class="read-more" href="#" data-toggle="popover" title="Popover Header" data-content="woooooow">Learn More<span class="tooltiptext">Suitable Ages:<br> Any <br><br>Spot left:<br> 1 out of 10 <br><br>Begin Date:<br> 12/10/2017<br><br>Today's Date:<%= Time.now %><br><br>Auto Upate:<br>2AM</span></a>
                         </div>
                     </div>
                 </div>
@@ -466,11 +346,10 @@
             <div class="row">
                 <div class="container">
                     <h2 class="block-title bw-block-title ">
-                        our best skills
+                        our experts and skills
                     </h2>
                     <p class="sub-title w-sub-title">
-                        Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus quis sem tincidunt
-                        egestas vel id lacus.
+                        help disenfranchised business and individuals reach their goals with carefully crafted information.
                     </p>
                     <div class="row time-line">
                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -480,9 +359,9 @@
                                         <h3 class="timer countto" data-to="90" data-speed="3000"><span>0</span></h3>
                                     </div>
                                 </div>
-                                <h5>digital marketing</h5>
+                                <h5>Development</h5>
 
-                                <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat.</p>
+                                <p>Business, Software and IT Development</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -492,9 +371,9 @@
                                         <h3 class="timer countto" data-to="85" data-speed="3000"><span>0</span></h3>
                                     </div>
                                 </div>
-                                <h5>promo companies</h5>
+                                <h5>Product</h5>
 
-                                <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat.</p>
+                                <p>Development, Market & Management</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -506,9 +385,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h5>social media</h5>
+                                <h5>Social media</h5>
 
-                                <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat.</p>
+                                <p>Analytics , Monetization & Management</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12">
@@ -518,9 +397,9 @@
                                         <h3 class="timer countto" data-to="95" data-speed="3000"><span>0</span></h3>
                                     </div>
                                 </div>
-                                <h5>content support</h5>
+                                <h5>Content support</h5>
 
-                                <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat.</p>
+                                <p>Web Management, Database Management, IT Support and Automation</p>
                             </div>
                         </div>
                     </div>
@@ -531,62 +410,40 @@
 
     <!--BLOCK "TYPE 10"-->
     <div class="contact scroll-to-block">
-        <div class="container ">
-            <h2 class="block-title b-block-title ">
-                how find us
-            </h2>
-            <p class="sub-title">
-                Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus quis sem tincidunt
-                egestas vel id lacus.
-            </p>
-        </div>
-        <div id="map-canvas" data-lat="43.653226" data-lng="-79.383184" data-zoom="10" data-style="style-1">
-        </div>
-        <div class="addresses-block">
-            <a data-lat="43.653226" data-lng="-79.383184" data-string="1. Here is some address or email or phone or something else..."></a>
-        </div>
         <div class="container contact-us">
             <div class="row">
                 <div class=" contact-info">
-                    <h5>Address</h5>
-
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                    <h5>Call Us</h5>
-                    <a class="phone" href="tel:+485558960568188">+48 555 896 0568 188</a>
-                    <h5>Email</h5>
-
-                    <p><a class="mail-us" href="mailto:clients@simplissimo.com">clients@simplissimo.com</a></p>
+                  <h2 class="block-title b-block-title ">
+                      How to find us
+                  </h2>
+                  <h6>Address</h6>
+                  <p class="sub-title">
+                    Dallas, Tx 75204<br>
+                    Text or Call:  <a class="phone" href="tel:+2139281640">213-928-1640</a><br>
+                    Email:  <a class="mail-us" href="mailto:clients@simplissimo.com">clients@simplissimo.com</a>
+                  </p>
+                  <h6>Address</h6>
+                  <p class="sub-title">
+                    Text or Call:  <a class="phone" href="tel:+2139281640">213-928-1640</a><br>
+                  </p><h6>Address</h6>
+                  <p class="sub-title">
+                    Email:  <a class="mail-us" href="mailto:clients@simplissimo.com">clients@simplissimo.com</a>
+                  </p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+
+      <!-- Begin Constant Contact Inline Form Code -->
+      <div class="ctct-inline-form" data-form-id="5a504795-17e3-4c4c-88bc-2c4f8a39be07"></div>
+      <!-- End Constant Contact Inline Form Code -->
+      <!-- Begin Constant Contact Inline Form Code -->
+      <div class="ctct-inline-form" data-form-id="088467c2-0948-481c-8a16-7136fe324cae"></div>
+      <!-- End Constant Contact Inline Form Code -->
+
     <!--FOOTER-->
     <footer class="footer  b-footer">
-        <div class="container container-footer">
-            <a class="logo-footer" href="#"><img src="footer-logo.png" alt="logo"/></a>
-            <p class="footer-info s-footer-info">Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendrerit <br>nisl. In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.</p>
-            <form class="subscribe-form clearfix" action="./">
-                <label for="sb">SUBSCRIBE</label>
-                <div class="input-container clearfix">
-                    <input class="subscribe-email" id="sb" type="email" placeholder="Your email" required/>
-                    <input class="subscribe-submit" type="submit" value=" "/>
-                </div>
-            </form>
-            <div class="ftr-social b-ftr-social">
-                <a class="social-network sc-fb" href="#">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a class="social-network sc-g" href="#">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a class="social-network sc-tw" href="#">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-                <a class="social-network sc-in" href="#">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
         <div class="ftr-nav-container">
             <div class="container">
                 <nav class="ftr-nav b-ftr-nav clearfix">
@@ -603,5 +460,9 @@
         </div>
     </footer>
 <%= stylesheet_link_tag href="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en" %>
+<!-- Begin Constant Contact Active Forms -->
+<script> var _ctct_m = "6bd86b99f91ca0c30325f83441090d27"; </script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
 </body>
 </html>
