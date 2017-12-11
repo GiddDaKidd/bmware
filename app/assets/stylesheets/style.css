@@ -62,7 +62,7 @@
 }
 
 .b-cube {
-  background: #e66a55;
+  background: #1a4571;
 }
 
 .ar-cube {
@@ -2757,27 +2757,27 @@ img.footer-logo {
   color: #fff;
 }
 .b-nav li a:hover {
-  color: #e66a55;
-  border-color: #e66a55;
+  color: #1a4571;
+  border-color: #1a4571;
 }
 @media screen and (max-width: 992px) {
   .b-nav li a {
-    border-top: 1px solid #e66a55;
+    border-top: 1px solid #1a4571;
   }
   .b-nav li a:hover {
-    background: #e66a55;
+    background: #1a4571;
     color: #fff;
   }
 }
 .b-nav li.active a {
-  color: #e66a55;
-  border-color: #e66a55;
+  color: #1a4571;
+  border-color: #1a4571;
 }
 @media screen and (max-width: 992px) {
   .b-nav li.active a {
-    background: #e66a55;
+    background: #1a4571;
     color: #fff !important;
-    border-color: #e66a55;
+    border-color: #1a4571;
   }
 }
 @media screen and (max-width: 481px) {
@@ -2794,7 +2794,7 @@ img.footer-logo {
 }
 
 .bs-menu-button span {
-  background: #e66a55;
+  background: #1a4571;
 }
 
 /*-------------------- 13-BLOCK-TYPE-1 ------------*/
@@ -2919,7 +2919,7 @@ body.red .w-banner .pagination {
 }
 
 .content-red h1 span, .content-red h2 span {
-  color: #e66a55;
+  color: #1a4571;
 }
 
 .content-red p {
@@ -2963,7 +2963,7 @@ body.red .w-banner .pagination {
   cursor: pointer;
 }
 .banner-navigation.active {
-  border-color: #e66a55;
+  border-color: #1a4571;
 }
 
 .banner-navigation img {
@@ -2979,7 +2979,7 @@ body.red .w-banner .pagination {
 }
 
 .active-nav, .banner-navigation:hover {
-  border-color: #e66a55;
+  border-color: #1a4571;
 }
 
 @media (max-width: 991px) {
@@ -3023,7 +3023,7 @@ body.red .w-banner .pagination {
     cursor: pointer;
   }
   .pagination-bs .swiper-active-switch {
-    background: #e66a55;
+    background: #1a4571;
   }
 }
 
@@ -3102,17 +3102,17 @@ body.red .service h5 {
 }
 
 body.red .active-serv h5, body.red .active-serv {
-  color: #e66a55;
+  color: #1a4571;
   opacity: 1;
 }
 
 .detail {
-  background-color: #e66a55;
+  background-color: #1a4571;
 }
 
 .service-detail {
   padding: 15px;
-  background-color: #e66a55;
+  background-color: #1a4571;
   min-height: 500px;
 }
 @media screen and (max-width: 992px) {
@@ -3309,7 +3309,7 @@ body.red .active-serv h5, body.red .active-serv {
   cursor: pointer;
   max-width: 50%;
   text-align: center;
-  background-color: #e66a55;
+  background-color: #1a4571;
   position: absolute;
   top: 103px;
   left: 27%;
@@ -3354,7 +3354,7 @@ p.history-p {
 .story-image img {
   border-radius: 50%;
   display: inline-block;
-  border: 15px solid #e66a55;
+  border: 15px solid #1a4571;
   width: 256px;
   height: 256px;
 }
@@ -3453,7 +3453,7 @@ body.red .active-process img {
 }
 
 body.red .number {
-  background-color: #e66a55;
+  background-color: #1a4571;
 }
 
 body.red .number p {
@@ -3700,7 +3700,7 @@ body.red .member-social i:hover {
   text-transform: uppercase;
   padding: 0 15px;
   line-height: 50px;
-  color: #e66a55;
+  color: #1a4571;
 }
 
 .price p {
@@ -3748,13 +3748,13 @@ body.red .member-social i:hover {
   text-transform: uppercase;
   text-align: center;
   font-size: 26px;
-  color: #e66a55;
+  color: #1a4571;
 }
 
 p.p-year {
   text-align: center;
   line-height: 16px;
-  color: #e66a55;
+  color: #1a4571;
 }
 
 .year-price img {
@@ -3778,7 +3778,7 @@ p.p-year {
 .year-price div {
   margin-top: 40px;
   width: 100%;
-  background-color: #e66a55;
+  background-color: #1a4571;
 }
 
 .year-price div a {
@@ -3887,7 +3887,7 @@ p.p-year {
 .best-skills > .container-fluid {
   padding-top: 136px;
   padding-bottom: 130px;
-  background: rgba(230, 107, 85, 0.85);
+  background: rgb(26, 69, 113);
 }
 @media screen and (max-width: 992px) {
   .best-skills > .container-fluid {
@@ -3962,7 +3962,7 @@ p.p-year {
 
 .skill h3 {
   font-size: 40px;
-  color: #e66a55;
+  color: #1a4571;
 }
 .skill h3:after {
   content: '%';
@@ -4010,17 +4010,17 @@ body.red .blog {
 }
 
 .red-blog {
-  color: #e66a55;
+  color: #1a4571;
   opacity: 0.9;
 }
 
 .red-blog:hover {
   opacity: 1;
-  color: #e66a55;
+  color: #1a4571;
 }
 
 body.red .post h5 a:hover {
-  color: #e66a55;
+  color: #1a4571;
 }
 
 .red-blog:after {
@@ -4035,7 +4035,7 @@ body.red .post h5 a:hover {
 }
 
 .red-form .send {
-  color: #e66a55;
+  color: #1a4571;
   opacity: 0.7;
 }
 
@@ -4059,12 +4059,12 @@ body.red .post h5 a:hover {
   }
 }
 .b-ftr-nav li a:hover {
-  color: #e66a55;
+  color: #1a4571;
 }
 
 .b-ftr-social .social-network:hover {
-  background: #e66a55;
-  border-color: #e66a55;
+  background: #1a4571;
+  border-color: #1a4571;
 }
 
 body.red .contact {

@@ -5,9 +5,9 @@
     <meta name="format-detection" content="telephone-no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="img/business/favicon.ico"/>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+<%= csrf_meta_tags %>
     <title>Business</title>
 </head>
 <body class="red">
@@ -21,7 +21,7 @@
     <!--HEADER-->
     <header class="b-header header" >
         <div class="container clearfix nopadding">
-            <div id="logo"><a href="#"><img src="img/business/logo.png" alt="logo"></a></div>
+            <div id="logo"><a href="#"><img src="http://bxmark.net/assets/images/image05.png?v88854944329051" alt="logo"></a></div>
             <div class="menu-button bs-menu-button">
                 <span></span>
                 <span></span>
@@ -48,7 +48,7 @@
         <div class="swiper-container busines-slider"  data-loop="1" data-slides-per-view="1" data-mode="horizontal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="center-image" src="img/business/top_bg.jpg" alt="background">
+                    <img class="center-image" src="("%>/top_bg.jpg" alt="background">
 
                     <div class="container">
                         <div class="content-red">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img class="center-image" src="img/business/slide_bg2.jpg" alt="background">
+                    <%= image_tag("slide_bg2.jpg" alt="background")%>
 
                     <div class="container">
                         <div class="content-red">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img class="center-image" src="img/business/slide_bg3.jpg" alt="background">
+                    <%= image_tag("slide_bg3.jpg" alt="background")%>
 
                     <div class="content-red">
                         <div class="container">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img class="center-image" src="img/business/slide_bg4.jpg" alt="background">
+                    <%= image_tag("slide_bg4.jpg" alt="background">)%>
 
                     <div class="container">
                         <div class="content-red">
@@ -106,25 +106,25 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation active-nav">
-                            <img src="img/business/icon_1.png" alt="banner navigation">
+                            <%= image_tag("icon_1.png" alt="banner navigation")%>
                             <h5>about us</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                            <img src="img/business/icon_2.png" alt="banner navigation">
+                            <%= image_tag("icon_2.png" alt="banner navigation")%>
                             <h5>philosophy</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                            <img src="img/business/icon_3.png" alt="banner navigation">
+                            <%= image_tag("icon_3.png" alt="banner navigation")%>
                             <h5>principles</h5>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
                         <div class="banner-navigation">
-                            <img src="img/business/icon_4.png" alt="banner navigation">
+                            <%= image_tag("icon_4.png" alt="banner navigation")%>
                             <h5>experience</h5>
                         </div>
                     </div>
@@ -145,23 +145,23 @@
             </p>
 
             <div class="row">
-                <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><img src="img/business/serv_1.png"
-                                                                                    alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><%= image_tag("serv_1.png"
+                                                                                    alt="service")%></p>
                     <h5>analysis</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><img src="img/business/serv_2.png" alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag("serv_2.png" alt="service")%></p>
                     <h5>strategy</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><img src="img/business/serv_3.png" alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag("serv_3.png" alt="service")%></p>
                     <h5>social media</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><img src="img/business/serv_4.png" alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag("serv_4.png" alt="service")%></p>
                     <h5>marketing</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><img src="img/business/serv_5.png" alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag("serv_5.png" alt="service")%></p>
                     <h5>development</h5>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><img src="img/business/serv_6.png" alt="service"></p>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag("serv_6.png" alt="service")%></p>
                     <h5>support</h5>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_2bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_2bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -235,7 +235,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_2bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_2bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -253,7 +253,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                             <a class="read-more" href="#">Read more</a>
                         </div>
                     </div>
-                    <div class="serv-pic" style="background-image:url('img/business/serv_2bg.jpg')">
+                    <div class="serv-pic" style="background: image-url('serv_2bg.jpg')">
                     </div>
                 </div>
             </div>
@@ -297,7 +297,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_2.jpg" alt="history">
+                                        <%= image_tag("history_2.jpg" alt="history")%>
 
                                         <p >dec 25, 2014</p>
 
@@ -316,7 +316,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_1.png" alt="history">
+                                        <%= image_tag("history_1.png" alt="history")%>
 
                                         <p>mar 20, 2015</p>
                                     </div>
@@ -334,7 +334,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_3.jpg" alt="history">
+                                        <%= image_tag("history_3.jpg" alt="history")%>
 
                                         <p>apr 10, 2015</p>
                                     </div>
@@ -352,7 +352,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_1.png" alt="history">
+                                        <%= image_tag("history_1.png" alt="history")%>
 
                                         <p>mar 01, 2015</p>
                                     </div>
@@ -370,7 +370,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_2.jpg" alt="history">
+                                        <%= image_tag("history_2.jpg" alt="history")%>
 
                                         <p>dec 25, 2014</p>
                                     </div>
@@ -388,7 +388,7 @@
                             <div class="story-d">
                                 <div class="story-description">
                                     <div class="story-image">
-                                        <img src="img/business/history_3.jpg" alt="history">
+                                        <%= image_tag("history_3.jpg" alt="history")%>
 
                                         <p>apr 10, 2015</p>
                                     </div>
@@ -421,7 +421,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process active-process">
-                        <img src="img/business/proc_1.png" alt="">
+                        <%= image_tag("proc_1.png" alt="")%>
                         <h6>Discuss</h6>
 
                         <div class="number number-red"><p>1</p></div>
@@ -429,7 +429,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="img/business/proc_2.png" alt="">
+                        <%= image_tag("proc_2.png" alt="")%>
                         <h6>Creative Concept</h6>
 
                         <div class="number number-red"><p>2</p></div>
@@ -437,7 +437,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="img/business/proc_3.png" alt="">
+                        <%= image_tag("proc_3.png" alt="")%>
                         <h6>Production</h6>
 
                         <div class="number number-red"><p>3</p></div>
@@ -445,7 +445,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="process">
-                        <img src="img/business/proc_4.png" alt="">
+                        <%= image_tag("proc_4.png" alt="")%>
                         <h6>Happy client</h6>
 
                         <div class="number number-red"><p>4</p></div>
@@ -529,7 +529,7 @@
                         <div class="col-md-12">
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -537,12 +537,12 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_1.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_1.png" alt="logo")%></p>
                             </div>
 
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -550,11 +550,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_2.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_2.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -562,12 +562,12 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_3.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_3.png" alt="logo")%></p>
                             </div>
 
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -575,11 +575,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_4.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_4.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -587,11 +587,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_5.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_5.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -599,11 +599,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_2.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_2.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -611,11 +611,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_3.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_3.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -623,11 +623,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_4.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_4.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -635,11 +635,11 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_5.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_5.png" alt="logo")%></p>
                             </div>
                             <div class="project-desk">
                                 <div class="project-mon">
-                                    <img src="img/business/logo_hover.jpg" alt="logo hover">
+                                    <%= image_tag("logo_hover.jpg" alt="logo hover")%>
 
                                     <div class="logo-ds">
                                         <h5>Leman inc.</h5>
@@ -647,7 +647,7 @@
                                         <p>support and branding</p>
                                     </div>
                                 </div>
-                                <p class="logo-d"><img src="img/business/logo_6.png" alt="logo"></p>
+                                <p class="logo-d"><%= image_tag("logo_6.png" alt="logo")%></p>
                             </div>
                         </div>
                     </div>
@@ -678,7 +678,7 @@
                                 </a>
                             </div>
                         </div>
-                        <img class="member" src="img/business/team_4.jpg" alt="team"/>
+                        <%= image_tag("team_4.jpg" alt="team") %>
                         <h5>Marlon Leend</h5>
                         <p>head phographer</p>
                     </div>
@@ -699,7 +699,7 @@
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </div>
-                        <img class="member" src="img/business/team_1.jpg" alt="team"/>
+                        <%= image_tag("team_1.jpg" alt="team")%>
                         <h5>julia roberts</h5>
 
                         <p>marketing director</p>
@@ -721,7 +721,7 @@
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </div>
-                        <img class="member" src="img/business/team_2.jpg" alt="team">
+                        <%= image_tag("team_2.jpg" alt="team")%>
                         <h5>enn roberts</h5>
 
                         <p>creative director</p>
@@ -743,7 +743,7 @@
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </div>
-                        <img class="member" src="img/business/team_3.jpg" alt="team">
+                        <%= image_tag("team_3.jpg", alt="team")%>
                         <h5>John capone</h5>
 
                         <p>brand & web art director</p>
@@ -772,7 +772,7 @@
                         <h3 class="price-number">$150.00</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="img/business/price_1.png" alt="price user">
+                        <%= image_tag("price_1.png", alt="price user")%>
                         <h6 class="user">starter</h6>
                         <ul class="price-list">
                             <li><span>No</span> proin placerat phare</li>
@@ -791,7 +791,7 @@
                         <h3 class="price-number">$200.00</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="img/business/price_2.png" alt="price user">
+                        <%= image_tag("price_2.png", alt="price user")%>
                         <h6 class="user">user</h6>
 
                         <ul class="price-list">
@@ -812,7 +812,7 @@
                         <h3 class="price-number">$300.00</h3>
 
                         <p class="p-year">per year</p>
-                        <img src="img/business/price_3.png" alt="price user">
+                        <%= image_tag("price_3.png" alt="price user")%>
                         <h6 class="user">advanced</h6>
 
                         <ul class="price-list">
@@ -910,20 +910,20 @@
             </p>
             <div class="row">
                 <div class="col-md-4 col-sm-4 post">
-                    <a href="#"><img src="img/business/blog_1.jpg" alt="from blog"></a>
+                    <a href="#"><%= image_tag("blog_1.jpg")%> alt="from blog"></a>
                     <h5><a href="#">Pellentesque et lacinia eros, condim entum hendrerit nisl.</a></h5>
                     <p>Dorian Gray | Mar 07 / 2014</p>
                     <a class="read-more red-blog" href="">Read more</a>
                 </div>
                 <div class="col-md-4 col-sm-4 post">
-                    <a href="#"><img src="img/business/blog_2.jpg" alt="from blog"></a>
+                    <a href="#"><%= image_tag("%>/blog_2.jpg" alt="from blog")%>></a>
                     <h5><a href="#">Pellentesque et lacinia eros, condim entum hendrerit nisl.</a></h5>
 
                     <p>Dorian Gray | Mar 07 / 2014</p>
                     <a class="read-more red-blog" href="">Read more</a>
                 </div>
                 <div class="col-md-4 col-sm-4 post">
-                    <a href="#"><img src="img/business/blog_3.jpg" alt="from blog"></a>
+                    <a href="#"><%= image_tag("%>/blog_3.jpg" alt="from blog")%>></a>
                     <h5><a href="#">Pellentesque et lacinia eros, condim entum hendrerit nisl.</a></h5>
 
                     <p>Dorian Gray | Mar 07 / 2014</p>
@@ -977,7 +977,7 @@
     <!--FOOTER-->
     <footer class="footer  b-footer">
         <div class="container container-footer">
-            <a class="logo-footer" href="#"><img src="img/business/footer-logo.png" alt="logo"/></a>
+            <a class="logo-footer" href="#"><%= image_tag("%>/footer-logo.png" alt="logo")%></a>
             <p class="footer-info s-footer-info">Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendrerit <br>nisl. In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.</p>
             <form class="subscribe-form clearfix" action="./">
                 <label for="sb">SUBSCRIBE</label>
@@ -1020,13 +1020,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/idangerous.swiper.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/isotope.pkgd.min.js" ></script>
-    <script src="js/placeholder.min.js"></script>
-    <script src="js/global.js"></script>
+<%= stylesheet_link_tag href="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en" %>
 </body>
 </html>
