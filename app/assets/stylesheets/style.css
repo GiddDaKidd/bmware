@@ -54,6 +54,15 @@
   height: 50px;
 }
 
+img.logohead {
+    width: 84px;
+}
+
+#servy{
+  background-image: url('/images/bg.jpg');
+
+}
+
 .spinner {
   margin: 100px auto;
   width: 32px;
@@ -760,7 +769,7 @@ a[href^="http://maps.google.com/maps"] {
 /* 7- PLUGINS STYLE  */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* ===============================================================
-Basic Swiper Styles 
+Basic Swiper Styles
 ================================================================*/
 .swiper-container {
   margin: 0 auto;
@@ -2749,7 +2758,7 @@ img.footer-logo {
 }
 @media screen and (max-width: 992px) {
   .b-header {
-    background: rgba(0, 0, 0, 0.9);
+    background: #9e9e9e;
   }
 }
 
@@ -2790,7 +2799,7 @@ img.footer-logo {
 }
 
 .b-header-active {
-  background: rgba(0, 0, 0, 0.9);
+  background: #9e9e9e;
 }
 
 .bs-menu-button span {
@@ -3146,7 +3155,7 @@ body.red .active-serv h5, body.red .active-serv {
   line-height: 28px;
   font-size: 16px;
   text-align: center;
-  color: #ffd7d0;
+  color: #fff;
   margin: 0 auto 50px;
   max-width: 75%;
 }
@@ -3159,7 +3168,7 @@ body.red .active-serv h5, body.red .active-serv {
 }
 
 .service-detail .read-more {
-  color: #ffd7d0;
+  color: #1a4571;
   display: block;
 }
 
@@ -3720,13 +3729,13 @@ body.red .member-social i:hover {
   background: #fff;
 }
 .year-price:hover {
-  background: rgba(229, 107, 84, 0.8);
+  background: rgba(26, 69, 113, 0.25);
 }
 .year-price:hover h3, .year-price:hover .p-year, .year-price:hover .price-list li, .year-price:hover .user, .year-price:hover .price-list li span {
-  color: #fff;
+  color: rgb(26, 69, 113);
 }
 .year-price:hover div {
-  background: #FFD6D0;
+  background: rgba(26, 69, 113, 0.25);
 }
 .year-price:hover img {
   -webkit-filter: contrast(100%) brightness(0%) grayscale(0%) saturate(100%) hue-rotate(0deg) sepia(0%) invert(100%) blur(0px);
@@ -3802,7 +3811,7 @@ p.p-year {
   padding-bottom: 10px;
 }
 .price-list li span {
-  color: #e66b55;
+  color: rgb(26, 69, 113);
   font-weight: bold;
 }
 
@@ -3911,7 +3920,7 @@ p.p-year {
   font-size: 16px;
   max-width: 60%;
   margin: 40px auto 50px;
-  color: #ffd7d0;
+  color: #1a4571;
   line-height: 28px;
 }
 
