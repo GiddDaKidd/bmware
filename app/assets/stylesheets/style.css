@@ -92,11 +92,11 @@ img.wrkred {
     width: 53px;
 }
 
-h1.hovst {
+.ovrsthovering {
 font-weight: 100 !important;
 }
 
-span.clrst {
+.clearblust {
 font-weight: 500 !important;
 }
 
@@ -2965,7 +2965,7 @@ body.red .w-banner .pagination {
 }
 
 .content-red h1 span, .content-red h2 span {
-  color: #1a4571;
+  color: #fff;
 }
 
 .content-red p {
@@ -3732,7 +3732,7 @@ body.red .member-social i:hover {
 
 .our_prices {
   padding: 136px 0 136px;
-  background: #f9f9f9;
+  background: #33333;
 }
 @media screen and (max-width: 992px) {
   .our_prices {
