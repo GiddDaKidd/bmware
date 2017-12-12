@@ -70,6 +70,48 @@ img.logohead {
     width: 84px;
 }
 
+.fa {
+  color: #F5F5F5;
+}
+#tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+#tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+#servsec {
+    background-color: #EEEEEE;
+}
+
+img.wrkred {
+    width: 53px;
+}
+
+.ovrsthovering {
+font-weight: 100 !important;
+}
+
+.clearblust {
+font-weight: 500 !important;
+}
+
 .spinner {
   margin: 100px auto;
   width: 32px;
@@ -219,7 +261,7 @@ a, a:link, a:visited, a:active, a:hover {
 }
 
 body {
-  font-family: 'Jaapokki', sans-serif, Arial;
+  font-family: 'Lato', sans-serif, Arial;
   letter-spacing: 2px;
   font-weight: normal;
   font-size: 14px;
@@ -227,7 +269,7 @@ body {
 }
 
 p {
-  font-family: 'Maven Pro';
+  font-family: 'Lato';
   letter-spacing: 1px;
 }
 
@@ -279,7 +321,7 @@ body.header-moved #content-wrapper {
 
 /*text styles*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Jaapokki";
+  font-family: "Lato";
 }
 
 h3 {
@@ -287,7 +329,7 @@ h3 {
 }
 
 p {
-  font-family: "Maven Pro";
+  font-family: "Lato";
 }
 
 /*map*/
@@ -414,7 +456,7 @@ p {
   margin: 0 auto;
   line-height: 1.7;
   padding: 0 15px 80px;
-  font-family: 'Maven Pro';
+  font-family: 'Lato';
   letter-spacing: 0;
 }
 
@@ -507,7 +549,7 @@ p {
   text-align: center;
 }
 .demo-info h3 {
-  font-family: 'Maven Pro';
+  font-family: 'Lato';
   text-transform: uppercase;
   font-size: 16px;
   color: #d4fafd;
@@ -562,7 +604,7 @@ p {
   text-transform: uppercase;
   color: #888;
   font-weight: bold;
-  font-family: 'Maven Pro';
+  font-family: 'Lato';
 }
 
 .template-box {
@@ -582,7 +624,7 @@ p {
   text-transform: uppercase;
   color: #333;
   font-size: 13px;
-  font-family: "Jaapokki";
+  font-family: "Lato";
 }
 
 .img-box {
@@ -714,7 +756,7 @@ p {
   font-size: 14px;
   line-height: 22px;
   color: #2c2c2c;
-  font-family: 'Maven Pro';
+  font-family: 'Lato';
   letter-spacing: 1px;
   float: left;
 }
@@ -1876,7 +1918,7 @@ img.mfp-img {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .footer {
   background: #222;
-  padding-top: 65px;
+  padding-top: 0px;
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -2133,7 +2175,7 @@ img.footer-logo {
 .process h6 {
   color: #acafba;
   font-size: 13px;
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   margin-top: 28px;
   text-transform: uppercase;
 }
@@ -2168,14 +2210,14 @@ img.footer-logo {
   margin: auto;
   margin-top: 50px;
   font-size: 18px;
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   color: #acafba;
 }
 
 .number p {
   color: #acafba;
   margin-top: 17px;
-  font-family: "Jaapokki";
+  font-family: "Lato";
 }
 
 .active-process p {
@@ -2213,7 +2255,7 @@ img.footer-logo {
 
 .use {
   color: #35373e;
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
 }
 
 /*----------TEAM----------------------*/
@@ -2235,7 +2277,7 @@ img.footer-logo {
 }
 
 .our-team h2 {
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   font-size: 40px;
   margin-top: 138px;
   text-transform: uppercase;
@@ -2252,7 +2294,7 @@ img.footer-logo {
 
 .team-member h5 {
   font-size: 13px;
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
@@ -2393,7 +2435,7 @@ img.footer-logo {
 }
 
 .our-skills h3 {
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   font-size: 20px;
   text-transform: uppercase;
   margin-top: 90px;
@@ -2404,7 +2446,7 @@ img.footer-logo {
 }
 
 .our-progress h5 {
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   font-size: 13px;
   text-transform: uppercase;
   background: transparent;
@@ -2634,7 +2676,7 @@ img.footer-logo {
   opacity: 1;
   text-decoration: none;
   letter-spacing: 2px;
-  font-family: 'Jaapokki', sans-serif, Arial;
+  font-family: 'Lato', sans-serif, Arial;
   padding: 0 35px 0 0;
   background-position: 90% 1px !important;
   background-repeat: no-repeat;
@@ -2935,7 +2977,7 @@ body.red .w-banner .pagination {
 }
 
 .content-red h1 span, .content-red h2 span {
-  color: #1a4571;
+  color: #fff;
 }
 
 .content-red p {
@@ -2989,7 +3031,7 @@ body.red .w-banner .pagination {
 .banner-navigation h5 {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Jaapokki';
+  font-family: 'Lato';
   padding: 30px 0;
   color: #fff;
 }
@@ -3162,7 +3204,7 @@ body.red .active-serv h5, body.red .active-serv {
   line-height: 28px;
   font-size: 16px;
   text-align: center;
-  color: #ffd7d0;
+  color: #fff;
   margin: 0 auto 50px;
   max-width: 75%;
 }
@@ -3175,7 +3217,7 @@ body.red .active-serv h5, body.red .active-serv {
 }
 
 .service-detail .read-more {
-  color: #ffd7d0;
+  color: #1a4571;
   display: block;
 }
 
@@ -3702,7 +3744,7 @@ body.red .member-social i:hover {
 
 .our_prices {
   padding: 136px 0 136px;
-  background: #f9f9f9;
+  background: #33333;
 }
 @media screen and (max-width: 992px) {
   .our_prices {
@@ -3736,13 +3778,13 @@ body.red .member-social i:hover {
   background: #fff;
 }
 .year-price:hover {
-  background: rgba(229, 107, 84, 0.8);
+  background: rgba(26, 69, 113, 0.25);
 }
 .year-price:hover h3, .year-price:hover .p-year, .year-price:hover .price-list li, .year-price:hover .user, .year-price:hover .price-list li span {
-  color: #fff;
+  color: rgb(26, 69, 113);
 }
 .year-price:hover div {
-  background: #FFD6D0;
+  background: rgba(26, 69, 113, 0.25);
 }
 .year-price:hover img {
   -webkit-filter: contrast(100%) brightness(0%) grayscale(0%) saturate(100%) hue-rotate(0deg) sepia(0%) invert(100%) blur(0px);
@@ -3818,7 +3860,7 @@ p.p-year {
   padding-bottom: 10px;
 }
 .price-list li span {
-  color: #e66b55;
+  color: rgb(26, 69, 113);
   font-weight: bold;
 }
 
@@ -3927,7 +3969,7 @@ p.p-year {
   font-size: 16px;
   max-width: 60%;
   margin: 40px auto 50px;
-  color: #ffd7d0;
+  color: #1a4571;
   line-height: 28px;
 }
 
@@ -4086,6 +4128,7 @@ body.red .post h5 a:hover {
 body.red .contact {
   padding-top: 136px;
   border-top: 1px solid #ededed;
+  background: #fff;
 }
 @media screen and (max-width: 992px) {
   body.red .contact {
@@ -4157,6 +4200,5 @@ body.red .input-style:-ms-input-placeholder, body.red .tx-style:-ms-input-placeh
 
  *= require_home
  *= require_font-awesome.min
-
  */
 
