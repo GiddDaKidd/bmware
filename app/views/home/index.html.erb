@@ -44,7 +44,7 @@ $(document).ready(function(){
                     <li ><a class="scroll-to-link" href="#price">bware movement</a></li>
                     <li ><a class="scroll-to-link" href="#skills">skills</a></li>
                     <li ><a class="scroll-to-link" href="#contact">Contact</a></li>
-                    <li ><a class="scroll-to-link" href="https://bxmark.herokuapp.com/">Demo from a few (months agos)version ago</a></li>
+                    <li ><a class="scroll-to-link" href="https://bxmark.herokuapp.com/">Demo</a></li>
                 </ul>
             </nav>
         </div>
@@ -139,6 +139,8 @@ $(document).ready(function(){
             <div class="row">
                 <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><%= image_tag('business.png', :alt => 'service') %></p>
                     <h5>analysis</h5>
+                      <a id="tooltip" href="" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"><span class="tooltiptext">Suitable Ages:<br>Any <br><br>Spot left:<br> 38 out of 87 <br><br>Begin Date:<br><br> 12/10/2017<br><br>Today's Date:<%= Time.now %><br>Auto Upate: 2AM</span></a>
+
                 </div>
                 <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('microphone.png', :alt => 'service') %></p>
                     <h5>strategy</h5>
