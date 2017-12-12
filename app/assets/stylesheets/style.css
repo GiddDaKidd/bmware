@@ -91,6 +91,15 @@ img.logohead {
 img.wrkred {
     width: 53px;
 }
+
+h1.hovst {
+font-weight: 100 !important;
+}
+
+span.clrst {
+font-weight: 500 !important;
+}
+
 .spinner {
   margin: 100px auto;
   width: 32px;
@@ -4107,6 +4116,7 @@ body.red .post h5 a:hover {
 body.red .contact {
   padding-top: 136px;
   border-top: 1px solid #ededed;
+  background: #fff;
 }
 @media screen and (max-width: 992px) {
   body.red .contact {
