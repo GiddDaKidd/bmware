@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone-no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => 'reload' %>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
+    <%= csrf_meta_tags %>
+
+      <script>
+      $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+      });
+      </script>
+
+    <title>Business</title>
+</head>
+<body class="red">
+    <!--LOADER-->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="cube1 b-cube"></div>
+            <div class="cube2 b-cube"></div>
+        </div>
+    </div>
+    <!--HEADER-->
+    <header class="b-header header" >
+        <div class="container clearfix nopadding">
+            <div id="logo"><%= image_tag('bxmarklogo.png', :class => 'logohead', :alt => 'logo') %></div>
+            <div class="menu-button bs-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav b-nav  clearfix">
+                <ul>
+                    <li ><a class="scroll-to-link"  href="#home">home</a></li>
+                    <li ><a class="scroll-to-link" href="#services">services </a></li>
+                    <li ><a class="scroll-to-link" href="#process">work process</a></li>
+                    <li ><a class="scroll-to-link" href="#price">bware platform</a></li>
+                    <li ><a class="scroll-to-link" href="#skills">skills</a></li>
+                    <li ><a class="scroll-to-link" href="#contact">Contact</a></li>
+                    <li ><a class="scroll-to-link" href="https://bxmark.herokuapp.com/">Demo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--BLOCK "TYPE 1"-->
+    <div class="w-banner scroll-to-block" >
+        <div class="swiper-container busines-slider"  data-loop="1" data-slides-per-view="1" data-mode="horizontal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <%= image_tag('dariusz.jpg', :class => 'center-image', :alt => 'background') %>
+                    <div class="container">
+                        <div class="content-red">
+                            <h1 class="ovrsthovering">analysis,<br> <span class="clearblust">strategy,</span><br> development</h1>
+                              <p>As a team of electronic evidence advisors with ample amount of experience, we remove the burden for our clients by leveraging industry-leading expertise and technology to provide defensible access to electronic data and deliver cost-effective, brand focused results.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                      <%= image_tag('andrewneel.jpg', :class => 'center-image', :alt => 'background') %>
+                    <div class="container">
+                        <div class="content-red">
+                            <h2 class="ovrsthovering">experience,<br> <span class="clearblust">developing,</span><br> creative</h2>
+
+                            <p>We strive to make an impact on the businesses we working with and their communities. We serve by incorporating insightful master-planning development, innovation and creativity, and focusing on long-term sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <%= image_tag('markus-sp.jpg', :class => 'center-image', :alt => 'background') %>
+                    <div class="content-red">
+                        <div class="container">
+                            <h2 class="ovrsthovering">curate,<br> <span class="clearblust"> analyse,</span><br> production</h2>
+                            <p>The experienced and talented team of web development experts at BxMark take the next step in your company’s evolution with a website that takes advantage of current programming trends. No client is exactly like another, and we approach each project as a unique venture that presents exciting challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <%= image_tag('neven.jpg', :class => 'center-image', :alt => 'background') %>
+                    <div class="container">
+                        <div class="content-red">
+                            <h2 class="ovrsthovering">concept,<br> <span class="clearblust">branding,</span><br>  support</h2>
+
+                            <p> Our designers have deep experience in branding, corporate identity, brochures, annual reports, promotions, exhibitions, advertising, website design, apps, user experience design, publications, and motion graphics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination swiper-pagination pagination-bs"></div>
+        </div>
+        <div class="banner-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="banner-navigation active-nav">
+                          <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                            <h5>about us</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="banner-navigation">
+                          <i class="fa fa-coffee fa-4x" aria-hidden="true"></i>
+                            <h5>philosophy</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="banner-navigation">
+                          <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
+                            <h5>principles</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="banner-navigation">
+                          <i class="fa fa-flag-o fa-4x" aria-hidden="true"></i>
+                            <h5>experience</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BLOCK "TYPE 2"-->
+    <div id="servsec" class="serv scroll-to-block" >
+        <div class="container">
+            <h2 class="block-title b-block-title">
+                our services
+            </h2>
+
+            <p class="sub-title">
+            By learning, creating, and curating we strive for our expectations in a market that is constantly shifting and changing shape.
+            </p>
+
+            <div class="row">
+                <div class="col-md-2 col-sm-6 col-xs-6 service active-serv"><p><%= image_tag('business.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">analysis<span class="tooltiptext">BASIC MEASUREMENT<br>CUSTOM MEASUREMENT<br>INTEGRATED MEASUREMENT<br>ANALYTICS<br>POWERED SOLUTIONS<br>CUSTOMER ANALYTICS</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('microphone.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">strategy<span class="tooltiptext">Research<br>SEO<br>Content Marketing<br>Data Analytics<br>Social Media<br>Pay Per Click Advertising<br>Conversion Optimisation<br>Mobile Marketing<br>Website Factors<br>Email Marketing</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('socialmed.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">social media<span class="tooltiptext">Graphics and Animated Videos<br>Adaptability<br>Community management</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('television.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">marketing<span class="tooltiptext">Copywriting<br>Analytics<br>Budgeting<br>Curiosity<br>Business Savviness<br>Public Speaking</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('development.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">development<span class="tooltiptext">Understand<br>Plan<br>Create<br>Release<br>Iterate on feedback</span></h5>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-6 service"><p><%= image_tag('support.png', :alt => 'service') %></p>
+                  <h5 id="tooltip" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">support<span class="tooltiptext">Reliability<br>Competence<br>Openness<br>Compassion</span></h5>
+                </div>
+            </div>
+        </div>
+
+    <!--BLOCK "TYPE 3"-->
+    <!--BLOCK "TYPE 4"-->
+    <div class="work-process scroll-to-block" >
+        <div class="container">
+            <h2 class="block-title b-block-title">
+                Work Process
+            </h2>
+            <p class="sub-title">
+                How we breakdown, analyze, define & re/solve what must be done, possibly including a preferred methods or expected sequences
+            </p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="process active-process">
+                      <%= image_tag('discussion.png', class: 'wrkred') %>
+                        <h6>Discuss</h6>
+
+                        <div class="number number-red"><p>1</p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="process">
+                      <%= image_tag('open-mind.png') %>
+                        <h6>Creative Concept</h6>
+
+                        <div class="number number-red"><p>2</p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="process">
+                      <%= image_tag('industrial.png') %>
+                        <h6>Production</h6>
+
+                        <div class="number number-red"><p>3</p></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="process">
+                      <%= image_tag('proc_4.png') %>
+                        <h6>Happy client</h6>
+
+                        <div class="number number-red"><p>4</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="process-info active-info">
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
+                    </div>
+                </div>
+
+                <div class="process-info">
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
+                    </div>
+                </div>
+                <div class="process-info">
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
+                    </div>
+                </div>
+                <div class="process-info">
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>1</sup> Here is our chance to dig in and understand you and your business, the problems and your customers.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>2</sup>Your problem is in need of a creative long effecting solution. Brainstorming and getting to finding your solution made easier.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>3</sup> The technologies we use to build your business include programming languages such as Ruby and Python combined with business tools for testing, and analytics.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 read">
+                        <p><sup>4</sup> We're for you before, during and after. "Being customer focused allows you to be more pioneering.” -Founder of Amazon.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BLOCK "TYPE 5"-->
+    <!--BLOCK "TYPE 6"-->
+    <!--BLOCK "TYPE 7"-->
+    <div class="our_prices scroll-to-block" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="price">
+                        <h3>B w a r e Platform</h3>
+
+                        <p>BxMark was created to ultimately service small, medium sized businesses navigate the crazy world of digital marketing. </p>
+
+                        <p>While we are still developing launch date is still set for early-mid january, we found the best approach was to make it easy for SMBs to find great agencies and digital marketing professionals.<br>
+                          <br>To do this BxMark created a platform not only as marketplace of our trusted services but that expert marketing service professionals in local markets and across industry verticals.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="year-price">
+                        <h3 class="price-number">TBA Dec | 28th</h3>
+
+                        <p class="p-year"></p>
+                        <%= image_tag('price_1.png', :alt => 'service') %>
+                        <h6 class="user">Newbie</h6>
+                        <ul class="price-list">
+                            <li><span>Learn</span> the how to's of business.</li>
+                            <li><span>Utilize</span> tools, time and money.</li>
+                            <li><span>Execute</span> production and goals.</li>
+                            <li><span><sup>*</sup>All Course</span> are in text, pdf format(s).</li>
+                        </ul>
+                        <div>
+                          <p id="tooltip" class="read-more" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Learn More<span class="tooltiptext">Suitable level:<br>Any <br><br>Spot left:<br> 38 out of 87 <br><br>Begin Date:<br><br> 12/10/2017<br><br>Today's Date:<br><%= Time.now %><br>Auto Upate: 2AM</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="year-price">
+                        <h3 class="price-number">TBA Jan | 5th</h3>
+
+                        <p class="p-year"></p>
+                        <%= image_tag('price_2.png', :alt => 'service') %>
+                        <h6 class="user">General</h6>
+
+                        <ul class="price-list">
+                            <li><span>Utilizing</span> yourself, your circle</li>
+                            <li><span>Engagement</span> of tools and enviroment </li>
+                            <li><span>Execution</span> of Project Management</li>
+                            <li><span>Enviroment</span> transition from Jr. Developer</li>
+                            <li><span><sup>*</sup>All Course</span> Videos info</li>
+                        </ul>
+
+                        <div>
+                          <p id="tooltip" class="read-more" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Learn More<span class="tooltiptext">Suitable level:<br>Any <br><br>Spot left:<br> 4 out of 30 <br><br>Begin Date:<br><br> 12/10/2017<br><br>Today's Date:<br><%= Time.now %><br>Auto Upate: 2AM</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="year-price">
+                        <h3 class="price-number">TBA Jan | 20th</h3>
+
+                        <p class="p-year"></p>
+                        <%= image_tag('price_3.png', :alt => 'service') %>
+                        <h6 class="user">advanced</h6>
+
+                        <ul class="price-list">
+                            <li><span>Learn</span> about BME</li>
+                            <li><span>Business</span> principals to law</li>
+                            <li><span>Market</span> your products, goals</li>
+                            <li><span>Engineering</span>being and doing as one</li>
+                            <li><span><sup>*</sup>All Course</span> Video & text info</li>
+                        </ul>
+
+                        <div>
+                          <p id="tooltip" class="read-more" data-toggle="popover" title="Popover Header" data-content="woooooow">Learn More<span class="tooltiptext">Suitable level:<br> Any <br><br>Spot left:<br> 1 out of 10 <br><br>Begin Date:<br> 12/10/2017<br><br>Today's Date:<br><%= Time.now %><br><br>Auto Upate:<br>2AM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BLOCK "TYPE 8"-->
+    <div class="best-skills scroll-to-block" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <h2 class="block-title bw-block-title ">
+                        our experts and skills
+                    </h2>
+                    <p class="sub-title w-sub-title">
+                        help disenfranchised business and individuals reach their goals with carefully crafted information.
+                    </p>
+                    <div class="row time-line">
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="sk-describe">
+                                <div class="skill">
+                                    <div class="timer-wrapper">
+                                        <h3 class="timer countto" data-to="93" data-speed="3000"><span>0</span></h3>
+                                    </div>
+                                </div>
+                                <h5>Development</h5>
+
+                                <p>Business, Software and IT Development</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="sk-describe">
+                                <div class="skill">
+                                    <div class="timer-wrapper">
+                                        <h3 class="timer countto" data-to="87" data-speed="3000"><span>0</span></h3>
+                                    </div>
+                                </div>
+                                <h5>Product</h5>
+
+                                <p>Development, Market & Management</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="sk-describe">
+                                <div class="skill">
+                                    <div>
+                                        <div class="timer-wrapper">
+                                            <h3 class="timer countto" data-to="80" data-speed="3000"><span>0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Social media</h5>
+
+                                <p>Analytics , Monetization & Management</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="sk-describe">
+                                <div class="skill">
+                                    <div class="timer-wrapper">
+                                        <h3 class="timer countto" data-to="90" data-speed="3000"><span>0</span></h3>
+                                    </div>
+                                </div>
+                                <h5>Content support</h5>
+
+                                <p>Web Management, Database Management, IT Support and Automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BLOCK "TYPE 10"-->
+    <div class="contact scroll-to-block">
+        <div class="container contact-us">
+            <div class="row">
+                <div class=" contact-info">
+                  <h2 class="block-title b-block-title ">
+                      How to find us
+                  </h2>
+                  <h6>Address</h6>
+                  <p class="sub-title">
+                    Dallas, Tx 75204<br>
+                  </p>
+                  <h6>Text or Call:</h6>
+                  <p class="sub-title">
+                      <a class="phone" href="tel:+2139281640">213-928-1640</a><br>
+                  </p><h6>Email:</h6>
+                  <p class="sub-title">
+                     <a class="mail-us" href="mailto:clients@simplissimo.com">info@bxmark.net</a>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+
+    <!--FOOTER-->
+    <footer class="footer  b-footer">
+        <div class="ftr-nav-container">
+            <div class="container">
+                <nav class="ftr-nav b-ftr-nav clearfix">
+                    <ul>
+                        <li ><a class="scroll-to-link"  href="#home">home</a></li>
+                        <li ><a class="scroll-to-link" href="#services">services </a></li>
+                        <li ><a class="scroll-to-link" href="#process">work process</a></li>
+                        <li ><a class="scroll-to-link" href="#price">bware platform </a></li>
+                        <li ><a class="scroll-to-link" href="#skills">skills</a></li>
+                        <li ><a class="scroll-to-link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+<%= stylesheet_link_tag href="https://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en" %>
+</body>
+</html>
