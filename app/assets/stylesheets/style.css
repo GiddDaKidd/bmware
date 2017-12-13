@@ -320,6 +320,10 @@ p {
   font-family: "Lato";
 }
 
+i#contactico {
+    color: black !important;
+}
+
 /*map*/
 #map-canvas {
   height: 660px;
