@@ -81,8 +81,8 @@ img.logohead {
 
 #tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 240px;
+    background-color: #9e9e9e;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -3938,7 +3938,7 @@ p.p-year {
 }
 /*-------------------- 08-BLOCK-TYPE-7 ------------*/
 .best-skills {
-  background: url("../img/business/skills_bg.jpg") no-repeat top center;
+  background-image: url('skills_bg.jpg') no-repeat top center;
   background-size: cover;
 }
 
@@ -4150,7 +4150,7 @@ body.red .contact-us a:hover {
 
 body.red .contact-us input.send {
   color: #e66b55 !important;
-  background-image: url("../img/business/arrow.png");
+  background-image: url('arrow.png');
 }
 
 body.red .input-style, body.red .tx-style {
@@ -4201,3 +4201,4 @@ body.red .input-style:-ms-input-placeholder, body.red .tx-style:-ms-input-placeh
  *= require_home
  *= require_font-awesome.min
  */
+
