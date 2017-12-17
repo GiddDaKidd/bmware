@@ -4138,6 +4138,7 @@ body.red .contact-us {
 
 body.red .contact-us p, body.red .contact-us a {
   color: #888;
+  font-size: 14px;
 }
 
 body.red .contact-us a:hover {
