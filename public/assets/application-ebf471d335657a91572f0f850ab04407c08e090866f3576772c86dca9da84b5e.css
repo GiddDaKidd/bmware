@@ -70,6 +70,9 @@ img.logohead {
     width: 84px;
 }
 
+img.logohead3 {
+    width: 324px;
+}
 .fa {
   color: #F5F5F5;
 }
@@ -81,8 +84,8 @@ img.logohead {
 
 #tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 240px;
+    background-color: #9e9e9e;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -330,6 +333,10 @@ h3 {
 
 p {
   font-family: "Lato";
+}
+
+i#contactico {
+    color: black !important;
 }
 
 /*map*/
@@ -2589,6 +2596,7 @@ img.footer-logo {
 
 .contact-us p {
   color: #acafba;
+  font-size: 14px;
 }
 
 .contact-info h5 {
@@ -3938,7 +3946,7 @@ p.p-year {
 }
 /*-------------------- 08-BLOCK-TYPE-7 ------------*/
 .best-skills {
-  background: url("../img/business/skills_bg.jpg") no-repeat top center;
+  background-image: url('skills_bg.jpg') no-repeat top center;
   background-size: cover;
 }
 
@@ -4142,6 +4150,7 @@ body.red .contact-us {
 
 body.red .contact-us p, body.red .contact-us a {
   color: #888;
+  font-size: 14px;
 }
 
 body.red .contact-us a:hover {
@@ -4150,7 +4159,7 @@ body.red .contact-us a:hover {
 
 body.red .contact-us input.send {
   color: #e66b55 !important;
-  background-image: url("../img/business/arrow.png");
+  background-image: url('arrow.png');
 }
 
 body.red .input-style, body.red .tx-style {
@@ -4201,3 +4210,4 @@ body.red .input-style:-ms-input-placeholder, body.red .tx-style:-ms-input-placeh
  *= require_home
  *= require_font-awesome.min
  */
+
